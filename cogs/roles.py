@@ -15,6 +15,8 @@ class Roles(commands.Cog):
     guild_id = [750959329464549466, 763041558014066699]
     @commands.command()
     async def hire(self, ctx, member : discord.Member):
+        if member == None:
+            return await ctx.send("run this command again but next time actually mention someone to hire")
         for guild_id in config["servers"]:
             guild = self.bot.get_guild(guild_id)
             role = discord.utils.get(guild.roles, name="members")
@@ -28,6 +30,8 @@ class Roles(commands.Cog):
 
     @commands.command()
     async def fire(self, ctx, member : discord.Member):
+        if member == None:
+            return await ctx.send("run this command again but next time actually mention someone to fire")
         for guild_id in config["servers"]:
             guild = self.bot.get_guild(guild_id)
             role = discord.utils.get(guild.roles, name="members")
