@@ -7,12 +7,12 @@ class Admin(commands.Cog):
 
     @commands.is_owner()
     @commands.command()
-    async def reload(self, ctx, extension)
-        try:
-            self.bot.reload_extension(f"cogs.{extension}")
-            await ctx.send(f"{extension} was succesfully reloaded")
-        except:
-            await ctx.send("A error occured while reloading the cog")
+    async def reload(self, ctx, extension):
+        #try:
+        self.bot.reload_extension(f"cogs.{extension}")
+        await ctx.send(f"{extension} was succesfully reloaded")
+        #except:
+            #await ctx.send("A error occured while reloading the cog")
 
     @commands.is_owner()
     @commands.command()

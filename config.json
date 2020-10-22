@@ -1,4 +1,5 @@
 {
-    "token": "", #bot token
-    "servers": [] #server id
+    "token": "",
+    "servers": [750959329464549466, 763041558014066699],
+    "roles": ["Staff"]
 }
