@@ -1,5 +1,6 @@
 '''
 the first server id in the config file is the main server and the second one is the staff
+the roles in the config file are the roles added to the person when using the hire command
 '''
 
 
